@@ -164,5 +164,11 @@ namespace LocalAISight
             session.Dispose();
             return result;
         }
+        private void SettingsButton_Click(object sender, RoutedEventArgs e)
+        {
+            var settingsWin = new SettingsWindow();
+            settingsWin.Owner = this; // Gör så fönstret hamnar ovanpå huvudfönstret
+            settingsWin.ShowDialog(); // Öppnar som en modal dialog
+        }
     }
 }

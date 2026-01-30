@@ -12,12 +12,13 @@ public class OllamaClient
 
     public async Task<string> GetDescriptionAsync(string img, string question = null)
     {
-        var myPrompt = !string.IsNullOrEmpty(question) ? question : DefaultQuestion;
+        var myPrompt = !string.IsNullOrEmpty(question) ? question : Properties.Settings.Default.DefaultPrompt;
+        var mySystemPrompt = Properties.Settings.Default.SystemPrompt;
         var payload = new
         {
-            model = "ministral-3",
-            prompt = myPrompt +
-                     "Extrahera all text ordagrant och beskriv visuella element kortfattat. Du talar alltid svenska, såvida det inte handlar om text som OCR behandlats, då ska den visas som den är.",
+            model = Properties.Settings.Default.Model,
+            system = mySystemPrompt,
+            prompt = myPrompt,
             images = new[] { img },
             stream = false,
             options = new { temperature = 0 },

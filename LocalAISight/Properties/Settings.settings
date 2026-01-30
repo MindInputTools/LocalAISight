@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LocalAISight.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DefaultPrompt" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Beskriv det som syns här</Value>
+    </Setting>
+    <Setting Name="OCRPrompt" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Extrahera all text ordagrant och beskriv visuella element kortfattat. Du talar alltid svenska, såvida det inte handlar om text som OCR behandlats, då ska den visas som den är.</Value>
+    </Setting>
+    <Setting Name="SystemPrompt" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Du är en assistent som beskriver framför allt bilder och dess innehåll för en person som inte kan se dem. Du hoppar över allt kring-prat såsom här är beskrivningen osv</Value>
+    </Setting>
+    <Setting Name="Model" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ministral-3</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
