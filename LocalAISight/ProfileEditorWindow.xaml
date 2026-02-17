@@ -12,9 +12,9 @@
         <Label Content="Systemmeddelande:" Target="{Binding ElementName=SystemBox}"/>
         <TextBox x:Name="SystemBox" Height="80" TextWrapping="Wrap" AcceptsReturn="True" Margin="0,0,0,10"/>
         <Label Content="Standardfråga:" Target="{Binding ElementName=DefaultBox}"/>
-        <TextBox x:Name="DefaultBox" Margin="0,0,0,10"/>
+        <TextBox x:Name="DefaultBox" Margin="0,0,0,10" AcceptsReturn="True"/>
         <Label Content="OCRPrompt:" Target="{Binding ElementName=OCRPromptTextBox}"/>
-        <TextBox x:Name="OCRPromptTextBox" Margin="0,0,0,20"/>
+        <TextBox x:Name="OCRPromptTextBox" AcceptsReturn="True" Margin="0,0,0,20"/>
         <Label Content="OLLAMA Modell:" Target="{Binding ElementName=ModelComboBox}"/>
         <ComboBox x:Name="ModelComboBox" Margin="0,0,0,20"/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
