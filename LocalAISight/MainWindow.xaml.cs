@@ -73,7 +73,7 @@ namespace LocalAISight
 <head>
   <meta charset=""utf-8"">
   <meta name=""viewport"" content=""width=device-width, initial-scale=1"">
-  <title>Markdown</title>
+  <title>Beskrivning från AI</title>
   <style>
     body {{ font-family: system-ui, Segoe UI, Roboto, sans-serif; padding:20px; }}
     h1,h2,h3 {{ margin-top:1.4em; }}
